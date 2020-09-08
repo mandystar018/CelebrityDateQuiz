@@ -1,7 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 4em;
+}
+
+h1, h3, button {
+  font-family: 'Sail', cursive;
+}
+p, span, h2, label {
+  font-family: 'Cormorant Garamond', serif;;
+}
+
+button {
+  margin-bottom: 30px;
+}
+
+.t-border{
+  border-top: 2px solid #dde3e4;
+  padding-bottom: 5%;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
 img {
   width: 50%;
 }
 
 #zoe, #mila, #jenny, #emma, #rachael, #bradley, #ryan, #liam, #andy, #will {
   display: none;
+}
+
+#name, #gender {
+  margin-bottom: 30px;
+}
+
+input {
+  margin-bottom: 20px;
 }

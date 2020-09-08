@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Sail&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
@@ -9,13 +10,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>Celebrity Dating Quiz</h1>
-    <p>Choose your answers base on your life experience and after completing the quiz you gonna be match with the most compatible celebrity for you.</p>
+    <div class="header">
+      <h1>Celebrity Dating Quiz</h1>
+      <p>Choose your answers base on your life experience and after completing the quiz you gonna be match with the most compatible celebrity for you.</p>
+    </div>
+    <div class="t-border"></div>
     <form id="form">
       <div class="form-row">
         <div class="col-md-6">
           <label for="name">Your Name</label>
-          <input type="text" class="form-control is valid" id="name">
+          <input type="text" class="form-control is valid" id="name" required>
           <div class="valid-feedback">Nice name!</div>
         </div>
         <div class="col-auto">
@@ -24,7 +28,6 @@
             <option selected>Choose...</option>
             <option class="female">Female</option>
             <option class="male">Male</option>
-            <option class="both">Both</option>
           </select>
         </div>
         <div class="form-group">
@@ -32,7 +35,7 @@
             <h3>Where will it be your perfect date?</h3>
             <ul>
               <li>
-                <input type="radio" name="question1" value="1">
+                <input type="radio" name="question1" value="1" required>
                 <span>Go for a little road trip and sing songs together.</span>
               </li>
               <li>
@@ -57,7 +60,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question2" value="1">
+                <input type="radio" name="question2" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -79,10 +82,10 @@
             </ul>
           </div>
           <div class="question3">
-            <h3>What kind of break fast will you cook for your partnet?</h3>
+            <h3>What do you care least about a partner?</h3>
             <ul>
               <li>
-                <input type="radio" name="question3" value="1">
+                <input type="radio" name="question3" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -104,10 +107,10 @@
             </ul>
           </div>
           <div class="question4">
-            <h3>What kind of break fast will you cook for your partnet?</h3>
+            <h3>What’s your favorite holiday to spend with your partner?</h3>
             <ul>
               <li>
-                <input type="radio" name="question4" value="1">
+                <input type="radio" name="question4" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -132,7 +135,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question5" value="1">
+                <input type="radio" name="question5" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -157,7 +160,7 @@
             <h3>Where will it be your perfect date?</h3>
             <ul>
               <li>
-                <input type="radio" name="question6" value="1">
+                <input type="radio" name="question6" value="1" required>
                 <span>Go for a little road trip and sing songs together.</span>
               </li>
               <li>
@@ -182,7 +185,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question7" value="1">
+                <input type="radio" name="question7" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -207,7 +210,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question8" value="1">
+                <input type="radio" name="question8" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -232,7 +235,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question9" value="1">
+                <input type="radio" name="question9" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -257,7 +260,7 @@
             <h3>What kind of break fast will you cook for your partnet?</h3>
             <ul>
               <li>
-                <input type="radio" name="question10" value="1">
+                <input type="radio" name="question10" value="1" required>
                 <span>Pancakes.</span>
               </li>
               <li>
@@ -280,6 +283,7 @@
           </div>
         </div>
       </div>
+      <div class="t-border"></div>
       <button type="submit" class="btn btn-outline-success">Complete!</button>
     </form>
     <h2 id="results"></h2>
